@@ -111,6 +111,9 @@ document.querySelector("#bluebin").innerHTML += animateBlueBin();
 
 // result/ending page
 
+document.querySelector("#compostPit").innerHTML += animatecompost();
+
+
 // functionality 
 
 //  bottle = document.querySelector(".dragger");
