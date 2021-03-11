@@ -1,12 +1,13 @@
-function eddyUI(top="0px", top2="30px"){
+function eddyUI(position="absolute", transform="scaleX(1)", mr="0px"){
     return`
     <img src="/images/sad ed.png" style="
 	height: 200px;
 	width: 250px;
-	margin-top: 50px;
-    position:absolute;
-    left: 10px;
-    top:${top};
+	margin-right: ${mr};
+    position:${position};
+    transform:${transform};
+    left: 3px;
+    top:10px;
     " onclick='eddyUI.chatBubble(this)'>
  
     `
@@ -14,5 +15,5 @@ function eddyUI(top="0px", top2="30px"){
 
 
 eddyUI.chatBubble = () =>{
-    document.getElementById("chat2").style.opacity="100";
+    document.getElementById("chat").style.opacity="100";
 }

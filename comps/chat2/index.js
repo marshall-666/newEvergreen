@@ -1,4 +1,4 @@
-function chatUI(opacity="0", left="300px", top="25px", test="Hey Travis, your landfill is looking really full! Whats going on?"){
+function chat2UI(){
     return`
 	<div style="
     height:130px;
@@ -6,19 +6,19 @@ function chatUI(opacity="0", left="300px", top="25px", test="Hey Travis, your la
     display:flex;
     justify-content: center;
     align-items: center;
-    left: ${left};
-    top: ${top};
+    left: 450px;
+    top: 300px;
+    position:absolute;
     background-color:#C4C4C4;
     border-radius: 10px;
     text-align: center;
-    opacity:${opacity};
-    position:absolute;
+    opacity:0;
     "
-    id="chat"
+    id="chat2"
     >
     <p style="
     margin:5px;
-    "<p>${test}</p>
+    "<p>Hey Ed! truth is, people aren’t managing their waste responsibly. Let me show you! </p>
     </div>  
     `
 }

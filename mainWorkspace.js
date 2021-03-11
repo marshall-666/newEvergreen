@@ -32,6 +32,8 @@ document.querySelector("#statistics").innerHTML += statBar();
 
 document.querySelector("#ed").innerHTML += eddyUI();
 document.querySelector("#travis").innerHTML += TravisUI();
+document.querySelector("#ed").innerHTML += chatUI();
+document.querySelector("#travis").innerHTML += chat2UI();
 
 document.querySelector("#interactiveGraph").innerHTML += animateBarChart();
 document.querySelector("#button").innerHTML += animateButton();
@@ -43,16 +45,17 @@ document.querySelector("#button2").innerHTML += animateButton();
 
 // mainCategory starts
 
-document.querySelector("#statItem1").innerHTML += tilecomp();  
-document.querySelector("#statItem2").innerHTML +=tilecomp("excus");
-document.querySelector("#statItem3").innerHTML +=tilecomp("excus");
-document.querySelector("#statItem4").innerHTML +=tilecomp("excus");
+document.querySelector("#statItem1").innerHTML += tilecomp("91% of the worlds plastic  is not recycled");  
+document.querySelector("#statItem2").innerHTML +=tilecomp("75% of the worlds glass is not recycled");
+document.querySelector("#statItem3").innerHTML +=tilecomp("30% of the worlds paper is not recycled");
+document.querySelector("#statItem4").innerHTML +=tilecomp("40.6% of the worlds Aluminum is not recycled ");
 
 
-document.querySelector("#statItem1A").innerHTML += tilecomp();  
-document.querySelector("#statItem2B").innerHTML +=tilecomp("excus");
-document.querySelector("#statItem3C").innerHTML +=tilecomp("excus");
+document.querySelector("#statItem1A").innerHTML += tilecomp("30% of the worlds Vegetables are thrown in the trash");  
+document.querySelector("#statItem2B").innerHTML +=tilecomp("15% of the worlds Fruit is thrown in the trash");
+document.querySelector("#statItem3C").innerHTML +=tilecomp("9% of the worlds baked goods are thrown in the trash");
 
+document.querySelector("#arrows").innerHTML += makeArrows();
 document.querySelector("#arrows").innerHTML += makeArrows();
 document.querySelector("#arrows").innerHTML += makeArrows();
 document.querySelector("#arrows").innerHTML += makeArrows();
@@ -116,8 +119,13 @@ document.querySelector("#bluebin").innerHTML += animateBlueBin();
 
 
 // result/ending page
-
 document.querySelector("#compostPit").innerHTML += animatecompost();
+
+document.querySelector("#happyTravis").innerHTML += TravisUI("none",  "scaleX(-1);", "-50px");
+document.querySelector("#happyEd").innerHTML += eddyUI("none",  "scaleX(-1);", "-50px");
+document.querySelector("#happyTravis").innerHTML += chatUI("100", "380px", "100px", "Now that we know how to recycle we can live like this!");
+document.querySelector("#happyEd").innerHTML += chatUI("100", "620px","25px", "Right on!");
+
 
 
 // functionality 
