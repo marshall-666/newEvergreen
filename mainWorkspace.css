@@ -2,7 +2,7 @@ html,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Reem Kufi', sans-serif;;
+    font-family: 'Reem Kufi', sans-serif;
     height: 100vh;
     width: 100vw;
 }
@@ -13,7 +13,7 @@ html,body{
     flex-direction: column;
     flex: 1;
     /* overflow-x: hidden; */
-    
+    background-color: #89A468;
 }
 
 
@@ -23,14 +23,14 @@ html,body{
     align-items: center;
     justify-content: space-around;
     margin-bottom: .2e;
-    background-color: rgb(103, 155, 103);
+    /* background-color: rgb(103, 155, 103); */
     height: 65em;
     width: 100vw;
 }
 
 .landing h1, h2
-{
-    margin-bottom: -.5em;
+{   
+    margin-bottom: .5em;
     margin-top: 30px;
 }
 
@@ -41,9 +41,16 @@ html,body{
 }
 
 /* Headers */
-h1{
+.landing h1{
     color: white;
+    font-size: 5em;
 }
+
+.landing h2
+{
+    font-size: 3.5em;
+}
+
 .topicHeading{
     color: white;
 }
@@ -94,7 +101,7 @@ h1{
 
 .wrapper .drive 
 {
-    background-color: rgb(123, 177, 218);
+    /* background-color: rgb(123, 177, 218); */
     height: 75em;
     position: relative;
 }
@@ -105,7 +112,7 @@ h1{
 
 .wrapper .dumping 
 {   display: flex;
-    background-color: rgb(142, 168, 187);
+    /* background-color: rgb(142, 168, 187); */
     height: 55em;
     position: relative;
     
@@ -166,7 +173,7 @@ h1{
 
 .wrapper .statPage
 {position: relative;
-    background-color: rgb(86, 112, 130);
+    /* background-color: rgb(86, 112, 130); */
     height: 60em;
 }
 
@@ -246,8 +253,9 @@ h1{
     display:flex;
     justify-content: center;
     position: relative;
-    background-color: rgb(103, 155, 103);
+    /* background-color: rgb(103, 155, 103); */
     height: 45em;
+    color: rgba(255, 255, 255, 0);
 }
 
 .characterFlex{
@@ -265,29 +273,15 @@ h1{
     justify-content:center;
     align-items:flex-end;
     position: relative;
-    background-color: rgb(103, 155, 103);
+    /* background-color: rgb(103, 155, 103); */
     height: 55em;
 }
 
-.buttonFlex{
-    margin:30px;
+.wrapper .graph .barGraph
+{
+    display: flex;
+    justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-.buttonFlex{
-    display:flex;
-  
-}
-
-
-
 
 
 #interactiveGraph
@@ -296,6 +290,7 @@ h1{
     width: 50vw;
     height: 45em;
     top: 1em;
+    color: rgba(0, 0, 0, 0);
     
 }
 
@@ -305,7 +300,7 @@ h1{
 
 .wrapper .mainCategory 
 {   position: relative;
-    background-color: rgb(152, 191, 152);
+    /* background-color: rgb(152, 191, 152); */
     height: 50em;
     display: flex;
     justify-content: space-evenly;
@@ -338,13 +333,15 @@ h1{
 
 .wrapper #halfGlobe 
 {   position: absolute;
-    left: -10em;
+    left: -25em;
+    top: 0em;
     z-index: 0;
     margin-right: 2em; ;
 }
 .wrapper #halfGlobe2 
 {   position: absolute;
-    right: -10em;
+    right: -25em;
+    top: 0em;
     z-index: 0;
     margin-left: 2em; 
     overflow: hidden;
@@ -354,7 +351,8 @@ h1{
 {
     display: flex;
     justify-content: space-between;
-    margin-top: 10em;
+    margin-top: 8em;
+    
 }
 .wrapper .mainCategory .topicInfoFlex2
 {
@@ -435,11 +433,18 @@ z-index: -5;
 
 .wrapper .sorting
 {
-    background-color: rgb(146, 193, 210);
-    height: 50em;
+    /* background-color: rgb(146, 193, 210); */
+    height: 60em;
     position: relative;
 }
-
+#bunchOfTrash {
+    position: relative;
+    left: 30em;
+    top: 0;
+    height: 700px;
+    width: 700px;
+    color: rgba(255, 255, 255, 0);
+}
 .wrapper .bins 
 {   
     display: flex;
@@ -449,7 +454,10 @@ z-index: -5;
     top: 25em;
 }
 
-
+.wrapper #blackbin, #greenbin, #bluebin
+{
+    color: rgba(0, 0, 0, 0);
+}
 
 .wrapper #green 
 {   box-sizing: border-box;
@@ -482,21 +490,31 @@ z-index: -5;
 }
 
 #compostPit
-{   margin: 10px;
-    height: 50vh;
-    width: 50vw;
+{   
+    position: relative;
+    top: 3em ;
+    left: 2em;
+    
+    height: 70vh;
+    width: 70vw;
+    color: rgba(240, 248, 255, 0);
 }
 
 #happyHeading{
 color:white;
-font-size: 24px;
+font-size: 35px;
+height: 3em;
+text-shadow: 0 3px 6px black;
 }
 
 .wrapper .compost
 {   display:flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+
     background-color: rgb(210, 171, 146);
-    height: 30em;
+    height: 60em;
 }
 
 .wrapper .happyCharacters{

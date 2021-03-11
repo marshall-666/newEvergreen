@@ -11,6 +11,7 @@ function chatUI(opacity="0", left="300px", top="25px", test="Hey Travis, your la
     background-color:#C4C4C4;
     border-radius: 10px;
     text-align: center;
+    transition:all 1s;
     opacity:${opacity};
     position:absolute;
     "

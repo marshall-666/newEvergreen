@@ -1,8 +1,8 @@
 function TravisUI(position="absolute", transform="scaleX(1)", mr="0px"){
     return`
     <img src="/images/trashy travis.png" style="
-    height:250px;
-    width 150px;
+    height:450px;
+    width 350px;
     margin-left:${mr};
     position:${position};
     transform:${transform};

@@ -6,7 +6,8 @@ const animItem = bodymovin.loadAnimation({
     animType: 'svg', 
     autoplay: false,
     loop: false,
-    path: 'https://assets4.lottiefiles.com/packages/lf20_ggkwliq4.json'
+    path:'https://assets2.lottiefiles.com/packages/lf20_5k0fu7wz.json'
+    // path: 'https://assets4.lottiefiles.com/packages/lf20_ggkwliq4.json'
 });
 
 svgContainer.addEventListener('click', () => {

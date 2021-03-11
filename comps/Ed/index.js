@@ -1,8 +1,8 @@
-function eddyUI(position="absolute", transform="scaleX(1)", mr="0px"){
+function eddyUI(position="absolute", transform="scaleX(1)", mr="0px", height="400px", width="450px"){
     return`
     <img src="/images/sad ed.png" style="
-	height: 200px;
-	width: 250px;
+	height: ${height};
+	width: ${width};
 	margin-right: ${mr};
     position:${position};
     transform:${transform};

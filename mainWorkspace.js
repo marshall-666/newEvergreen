@@ -32,12 +32,11 @@ document.querySelector("#statistics").innerHTML += statBar();
 
 document.querySelector("#ed").innerHTML += eddyUI();
 document.querySelector("#travis").innerHTML += TravisUI();
-document.querySelector("#ed").innerHTML += chatUI();
-document.querySelector("#travis").innerHTML += chat2UI();
+document.querySelector("#ed").innerHTML += chatUI("0", "500px");
+document.querySelector("#travis").innerHTML += chat2UI("750px");
 
 document.querySelector("#interactiveGraph").innerHTML += animateBarChart();
-document.querySelector("#button").innerHTML += animateButton();
-document.querySelector("#button2").innerHTML += animateButton();
+
 // page4 StatPage/Falling garbage,conversation and bar graph ends here
 
 
@@ -63,41 +62,22 @@ document.querySelector("#arrows2").innerHTML += makeArrows("&larr;");
 document.querySelector("#arrows2").innerHTML += makeArrows("&larr;");
 document.querySelector("#arrows2").innerHTML += makeArrows("&larr;");
 
-document.querySelector("#halfGlobe").innerHTML +=handleEarth("350px", "350px");
-document.querySelector("#halfGlobe2").innerHTML +=handleEarth("350px", "350px");
+document.querySelector("#halfGlobe").innerHTML +=handleEarth("800px", "800px");
+document.querySelector("#halfGlobe2").innerHTML +=handleEarth("800px", "800px");
 
 
 
 
 // dos and donts
 
-document.querySelector("#donts").innerHTML += reBox("./Dosimages/dr1.png","./Dosimages/dr2.png","./Dosimages/dr3.png","./Dosimages/dr4.png","Don't Recycle", "Soft-Plastic","Tissue Paper", "Reusables(Donate)", "Styrofoam");
-document.querySelector("#dos").innerHTML += reBox("./Dosimages/r1.png","./Dosimages/r2.png", "./Dosimages/r3.png", "./Dosimages/r4.png", "Recycle", "Glass", "Hard Plastic", "Metal", "Paper","#AEE781");
+document.querySelector("#donts").innerHTML += reBox("./Dosimages/dr1.png","./Dosimages/dr2.png","./Dosimages/dr3.png","./Dosimages/dr4.png","Don't Recycle", "Soft-Plastic","Tissue Paper", "Reusables(Donate)", "Styrofoam","#E29F9F");
+document.querySelector("#dos").innerHTML += reBox("./Dosimages/r1.png","./Dosimages/r2.png", "./Dosimages/r3.png", "./Dosimages/r4.png", "Recycle", "Glass", "Hard Plastic", "Metal", "Paper","#83ADB7");
 
 
-document.querySelector("#donts2").innerHTML += reBox("./Dosimages/dc1.png", "./Dosimages/dc2.png","./Dosimages/dc3.png","./Dosimages/dc4.png","Don't Compost", "Glossy Paper", "Dairy", "Meats", "Feces");
+document.querySelector("#donts2").innerHTML += reBox("./Dosimages/dc1.png", "./Dosimages/dc2.png","./Dosimages/dc3.png","./Dosimages/dc4.png","Don't Compost", "Glossy Paper", "Dairy", "Meats", "Feces","#E29F9F");
 
-document.querySelector("#dos2").innerHTML += reBox("./Dosimages/c1.png","./Dosimages/c2.png","./Dosimages/c3.png","./Dosimages/c4.png","Compost", "Fruits & Veg.", "Non-Glossy Paper", "Yard Waste", "Eggshells", "#AEE781");
+document.querySelector("#dos2").innerHTML += reBox("./Dosimages/c1.png","./Dosimages/c2.png","./Dosimages/c3.png","./Dosimages/c4.png","Compost", "Fruits & Veg.", "Non-Glossy Paper", "Yard Waste", "Eggshells", "#83ADB7");
 
-// document.querySelector("#donts2").innerHTML += dispDosDonts('#F1B6B6','#ECC2C2','Don\'t Recycle','donts2');
-// document.querySelector("#donts2div").innerHTML += addItem('/images/plasticbag.png','Soft Plastic');
-// document.querySelector("#donts2div").innerHTML += addItem('/images/toiletpaper.png','Tissue Paper');
-// document.querySelector("#donts2div").innerHTML += addItem('/images/slipper.png', 'Reusable Items');
-// document.querySelector("#donts2div").innerHTML += addItem('/images/styrofoam.png','Styrofoam Items');
-
-
-
-// document.querySelector("#dos2").innerHTML += dispDosDonts('#AEE781','#CBF6A8','Recycle','dos2');
-// document.querySelector("#dos2div").innerHTML += addItem('/images/glass.png','Glass');
-// document.querySelector("#dos2div").innerHTML += addItem('/images/pbottle.png','Hard Plastic');
-// document.querySelector("#dos2div").innerHTML += addItem('/images/can.png', 'Metal');
-// document.querySelector("#dos2div").innerHTML += addItem('/images/book.png','Paper')
-
-
-
-// var script=document.createElement('script');
-//  script.src="./comps/compost/index.js";
-// document.head.appendChild(script);
 
 
 
@@ -109,6 +89,9 @@ document.querySelector("#dos2").innerHTML += reBox("./Dosimages/c1.png","./Dosim
 
 
 // sorting
+
+
+document.querySelector("#bunchOfTrash").innerHTML += animateSorting();
 document.querySelector("#blackbin").innerHTML += animateBlackBin();
 document.querySelector("#greenbin").innerHTML += animateGreenBin();
 document.querySelector("#bluebin").innerHTML += animateBlueBin();
@@ -123,8 +106,8 @@ document.querySelector("#compostPit").innerHTML += animatecompost();
 
 document.querySelector("#happyTravis").innerHTML += TravisUI("none",  "scaleX(-1);", "-50px");
 document.querySelector("#happyEd").innerHTML += eddyUI("none",  "scaleX(-1);", "-50px");
-document.querySelector("#happyTravis").innerHTML += chatUI("100", "380px", "100px", "Now that we know how to recycle we can live like this!");
-document.querySelector("#happyEd").innerHTML += chatUI("100", "620px","25px", "Right on!");
+document.querySelector("#happyTravis").innerHTML += chatUI("100", "630px", "50px", "Now that we know how to recycle we can live like this!");
+document.querySelector("#happyEd").innerHTML += chatUI("100", "950px","25px", "Right on!");
 
 
 

@@ -1,4 +1,4 @@
-function chat2UI(){
+function chat2UI(leftP="450px"){
     return`
 	<div style="
     height:130px;
@@ -6,12 +6,13 @@ function chat2UI(){
     display:flex;
     justify-content: center;
     align-items: center;
-    left: 450px;
+    left: ${leftP};
     top: 300px;
     position:absolute;
     background-color:#C4C4C4;
     border-radius: 10px;
     text-align: center;
+    transition:all 1s;
     opacity:0;
     "
     id="chat2"

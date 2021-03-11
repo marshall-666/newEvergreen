@@ -3,15 +3,16 @@ bgColor="#f1b6b6" )
 {
    return`
    <div style="
-   height:35em;
+   height:50em;
    display:flex;
    flex-direction:column;
    justify-content:center;
    align-items:center;
+   padding-bottom:2em;
    width:50vw;
-   background-color:lightgreen;">
+   ">
 
-   <h1>${heading} </h1>
+   <h1 style="font-size:5em;">${heading} </h1>
    
    
    <div style="
@@ -19,6 +20,7 @@ bgColor="#f1b6b6" )
    flex-direction:column;
    justify-content:space-around;
    width:40vw;
+   height:65vh;
    margin:1em;
    border-radius:1em;
    align-items:center;
