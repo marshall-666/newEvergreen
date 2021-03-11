@@ -371,7 +371,7 @@ h1{
 }
 
 
-#dosAndDontsFlex{
+/* #dosAndDontsFlex{
 display:flex;
 }
 
@@ -379,9 +379,27 @@ display:flex;
 display: flex;
 background-color: rgb(152, 191, 152);
 z-index: -5;
-}
+} */
 
+#dosAndDontsFlex{
+    display:flex;
+    }
+#dosAndDontsFlex2{
+    display:flex;
+    }
 
+@keyframes rotate{
+    0% {
+      transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-12deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
 
 
 

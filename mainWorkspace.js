@@ -68,7 +68,13 @@ document.querySelector("#halfGlobe2").innerHTML +=handleEarth("350px", "350px");
 
 // dos and donts
 
+document.querySelector("#donts").innerHTML += reBox("./Dosimages/dr1.png","./Dosimages/dr2.png","./Dosimages/dr3.png","./Dosimages/dr4.png","Don't Recycle", "Soft-Plastic","Tissue Paper", "Reusables(Donate)", "Styrofoam");
+document.querySelector("#dos").innerHTML += reBox("./Dosimages/r1.png","./Dosimages/r2.png", "./Dosimages/r3.png", "./Dosimages/r4.png", "Recycle", "Glass", "Hard Plastic", "Metal", "Paper","#AEE781");
 
+
+document.querySelector("#donts2").innerHTML += reBox("./Dosimages/dc1.png", "./Dosimages/dc2.png","./Dosimages/dc3.png","./Dosimages/dc4.png","Don't Compost", "Glossy Paper", "Dairy", "Meats", "Feces");
+
+document.querySelector("#dos2").innerHTML += reBox("./Dosimages/c1.png","./Dosimages/c2.png","./Dosimages/c3.png","./Dosimages/c4.png","Compost", "Fruits & Veg.", "Non-Glossy Paper", "Yard Waste", "Eggshells", "#AEE781");
 
 // document.querySelector("#donts2").innerHTML += dispDosDonts('#F1B6B6','#ECC2C2','Don\'t Recycle','donts2');
 // document.querySelector("#donts2div").innerHTML += addItem('/images/plasticbag.png','Soft Plastic');
