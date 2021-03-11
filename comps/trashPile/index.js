@@ -5,7 +5,7 @@ const animItem = bodymovin.loadAnimation({
     wrapper:svgContainer,
     animType: 'svg', 
     autoplay: true,
-    loop: false,
+    loop: true,
     path: 'https://assets6.lottiefiles.com/packages/lf20_wmbv9bjr.json'
 });
 
